@@ -2,7 +2,7 @@ Skyglass Security is a client-side security module for AngularJS.
 
 'angular-spring-security' is a secured angular demo Single Page Application with protected urls, angular states, menu tabs and form actions, based on Angular JS, Skyglass Security, Angular UI-Router, angular-permission, uiBreadcrumbs directive (+ server side: Spring Boot, Spring Security, Spring REST, Spring Data JPA)
 
-1. Run mvn clean install or import 'angular-spring-security' maven project to your IDE
+1. Run 'mvn clean install' or import 'angular-spring-security' maven project to your IDE
 2. Run skyglass.demo.SkgApplication java class
 3. Go to localhost:8080/{any_friendly_url}. All urls are 'friendly'. No more #anchors!
 4. You will be redirected to login page with 'remember me' checkbox
