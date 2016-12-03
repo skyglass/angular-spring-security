@@ -1,0 +1,9 @@
+<h1>{{ userName }}</h1>
+<p>
+See how the breadcrumbs show the user name in uppercase? That's because we are able to specify 
+values that are made available by the state's <code>resolve</code> object, and interpolate
+against them. In this case, we specified <code ng-non-bindable>{{ userName | uppercase }}</code>.
+</p>
+<p>
+  <a class="btn btn-primary" ui-sref="skyglass.users.detail.image">View an image</a> - This will not affect the breadcrumbs.
+</p>
