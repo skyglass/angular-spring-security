@@ -1,4 +1,4 @@
-#Skyglass Security - client-side security module for AngularJS.
+* Skyglass Security is a client-side security module for AngularJS.
 
 * angular-spring-security is a secured angular + spring demo project with protected urls, angular states, menu tabs and actions, based on Angular JS, Skyglass Security, Angular UI-Router, angular-permission, uiBreadcrumbs directive, Spring Boot, Spring Security, Spring REST, Spring Data JPA and HSQLDB
 
@@ -8,7 +8,9 @@
 
 #angular-spring-security Configuration
 
-
+* Test users and their permissions are created in 'src/test/resource/data.sql'. 
+* User with read-only permissions - login: audit, password: audit
+* User with write permissions - login: admin, password: admin
 * All angular states are defined in 'src/main/resources/static/js/modules/app.js' file. Any non-abstract state shoud have 'data.displayName' property which is used by uiBreadcrumbs directive to automatically generate breadcrumbs. Any non-abstract state may have 'data.permissions' property which is used by angular-permission library to protect the angular state and redirect unauthorized user to 'No Permissions' page. Define your own states in this file to enable state protection and breadcrumbs auto generation in your own application. See https://github.com/angular-ui/ui-router/wiki/nested-states-%26-nested-views for more details on angular-ui-router nested states & nested views.
 
 #Skyglass Security Configuration
