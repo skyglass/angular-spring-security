@@ -1,6 +1,6 @@
-#angular-spring-security is a secured angular demo Single Page Application with protected urls, angular states, menu tabs and actions, based on Angular JS, Skyglass Security, Angular UI-Router, angular-permission, uiBreadcrumbs directive (+ server side: Spring Boot, Spring Security, Spring REST, Spring Data JPA)
+#Skyglass Security is a client-side security module for AngularJS.
 
-*Skyglass Security is a client-side security module for AngularJS.
+* angular-spring-security is a secured angular+spring demo project with protected urls, angular states, menu tabs and actions, based on Angular JS, Skyglass Security, Angular UI-Router, angular-permission, uiBreadcrumbs directive, Spring Boot, Spring Security, Spring REST, Spring Data JPA
 
 #Skyglass Security Congiguration.
 
