@@ -45,10 +45,10 @@ The project is based on Angular JS, Skyglass Security, Angular UI-Router, angula
 * $securityMenuConfig[{menuName}].{property} - returns any other property defined in security.menu.config.js file
 * $securityMenuConfig.defaultAdminState() - returns dynamic state which depends on user permissions. For example, for user 'admin' it would be 'skyglass.admin.write' state, but for user 'audit' it would be 'skyglass.admin.read' state.
 * $securityService.login(credentials, callback) - this method is called when user clicks 'submit' button on the login form. Parameter 'success' is pased to callback function. Default implementation of the callback function shows error message to user if login is unsuccessful and reloads main menu if login is successful
-* $securityService.authorizeMenu($securityMenuConfig[[menuName]) - loads menu by name {menuName}. The name is defined in security.menu.config.js file. Each menu tab may have 'permission' property which corresponds to PERMISSIONS defined in security.session.js file. According to the value of 'permissions' property, the tab chooses to render itself or not.
+* $securityService.authorizeMenu($securityMenuConfig[[menuName]) - loads menu by name {menuName}. The menu is defined in security.menu.config.js file. Each menu tab may have 'permission' property which corresponds to PERMISSIONS defined in security.session.js file. According to the value of 'permissions' property, the tab chooses to render itself or not.
 * $securityServiceProvider.rememberMeAuthenticate($windowProvider.$get().location.pathname) - this method should be called before angular states are defined, in the config block of the main module: 'src/main/static/js/modules/app.js'. This allows to take into account user permissions when angular dynamic states are configured.
 * $securityService.start() - initializes security module and redirects to the bookmarked, home or login state
-* security-menu directive - loads menu by name. The name is defined in security.menu.config.js. The menu tabs are rendered according to user permissions.
+* security-menu directive - loads menu by name. The menu is defined in security.menu.config.js. The menu tabs are rendered according to user permissions.
 
 #Skyglass Security UI
 2. Run skyglass.demo.SkgApplication java class
