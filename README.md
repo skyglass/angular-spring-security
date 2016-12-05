@@ -36,7 +36,7 @@ The project is based on Angular JS, Skyglass Security, Angular UI-Router, angula
 * 'src/main/resources/static/js/security/config/security.config.js' contains basic settings like 'loginPath', 'authenticateUrl', 'rememberMeAuthenticateUrl', 'logoutUrl' and so on
 * 'src/main/resources/static/js/security/config/security.permissions.js' contains USER_ROLES constants and PERMISSIONS properties. Change these objects to define your own permissions. USER_ROLES correspond to role names on server. PERMISSIONS properties are used by 'security.menu.config.js' to protect menu tabs and by 'security.state.permissions.js' to protect angular states
 * 'src/main/resources/static/js/security/config/security.menu.config.js' contains menu tabs configuration. Any menu tab may have 'permission' property (or array of properties) to define authorization rules. Unauthorized user won't be able to see protected tab. Names of menu tab 'permission' properties correspond to PERMISSIONS object properties of the 'security.permissions.js' file.
-- 'src/main/resources/static/js/security/config/security.state.permissions.js' sets permissions for 'angular-permission'. These permissions are used to protect angular states. Unauthorized user won't be able to go to protected state and will be redirected to 'No Permissions' state. 
+- 'src/main/resources/static/js/security/config/security.state.permissions.js' defines permissions for angular state protection, with 'angular-permission'. Unauthorized user won't be able to go to protected state and will be redirected to 'No Permissions' state. 
 
 #Skyglass Security API
 * $securitySession.permissions - returns permissions defined in security.permission.js file
