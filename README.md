@@ -32,7 +32,7 @@ The project is based on Angular JS, Skyglass Security, Angular UI-Router, angula
 #Skyglass Security Configuration
 
 * 'src/main/resources/static/security' - Skyglass Security Module folder
-* 'src/main/resources/static/js/security/config' - Skyglass Security Config folder. All files in this folder should be changed to enable Skyglass Security in your own Application.
+* 'src/main/resources/static/js/security/config' - Skyglass Security Config folder. All files in this folder should be changed in order to enable Skyglass Security in your own Application.
 * 'src/main/resources/static/js/security/config/security.config.js' contains basic settings like 'loginPath', 'authenticateUrl', 'rememberMeAuthenticateUrl', 'logoutUrl' and so on
 * 'src/main/resources/static/js/security/config/security.permissions.js' contains USER_ROLES constants and PERMISSIONS properties. Change these objects to define your own permissions. USER_ROLES correspond to role names on server. PERMISSIONS properties are used by 'security.menu.config.js' to protect menu tabs and by 'security.state.permissions.js' to protect angular states
 * 'src/main/resources/static/js/security/config/security.menu.config.js' contains menu tabs configuration. Any menu tab may have 'permission' property (or array of properties) to define authorization rules. Unauthorized user won't be able to see protected tab. Names of menu tab 'permission' properties are defined in PERMISSIONS object of 'security.state.permissions.js' file.
