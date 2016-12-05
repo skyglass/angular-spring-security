@@ -40,7 +40,7 @@ The project is based on Angular JS, Skyglass Security, Angular UI-Router, angula
 
 #Skyglass Security API
 * $securitySession.permissions - returns permissions defined in security.permission.js file
-$securitySession.user() - returns user object. Currently, only 'name' property is supported. Override SESSION.initData() method in security.session.js file to fill other properties returned from server.
+* $securitySession.user() - returns user object. Currently, only 'name' property is supported. Override SESSION.initData() method in security.session.js file to fill other properties returned from server.
 * $securityMenuConfig[{menuName}].tabs - returns tabs defined in security.menu.config.js file
 * $securityMenuConfig[{menuName}].{property} - returns any other property defined in security.menu.config.js file
 * $securityMenuConfig.defaultAdminState() - returns dynamic state which depends on user permissions. For example, for user 'admin' it would be 'skyglass.admin.write' state, but for user 'audit' it would be 'skyglass.admin.read' state.
