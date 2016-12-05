@@ -15,7 +15,7 @@
 9. Breadcrumbs auto generation, depending on current angular state, with uiBreadcrumbs directive
 10. User Logout, with Skyglass & Spring Security
 
-The projbect is based on Angular JS, Skyglass Security, Angular UI-Router, angular-permission, uiBreadcrumbs directive, Spring Boot, Spring Security, Spring REST, Spring Data JPA and HSQLDB
+The project is based on Angular JS, Skyglass Security, Angular UI-Router, angular-permission, uiBreadcrumbs directive, Spring Boot, Spring Security, Spring REST, Spring Data JPA and HSQLDB
 
 #angular-spring-security installation
 
