@@ -581,8 +581,7 @@ define([
 				}])
 				
 				.run(function($rootScope, $log, $state, $securityService, $location) {
-					  // Initialize auth module with the home page and login/logout path
-					  // respectively
+					  // Initialize security module with the bookmarked, home or login state
 					  $securityService.start();		  
 					  
 					  $rootScope.$on('$stateChangeError', function (event, toState, toParams, fromState, fromParams, error) {

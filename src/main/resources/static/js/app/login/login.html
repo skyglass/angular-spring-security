@@ -1,19 +1,22 @@
-<div class="alert alert-danger" ng-show="error">
-	There was a problem logging in. Please try again.
-</div>
-<form class="login-form form-horizontal dialog-form" role="form" ng-submit="login()">
+<div class="login">
+    <div class="login-triangle"></div>
+    <h2 class="login-header">Log in</h2>
+<form class="login-container" ng-submit="login()">
+	<div class="alert alert-danger" ng-show="error">
+		There was a problem logging in. Please try again.
+	</div>
 	<div class="form-group">
 		<label for="username">Username:</label> <input type="text"
-			class="form-control" id="username" name="username" ng-model="credentials.username"/>
+			id="username" name="username" ng-model="credentials.username"/>
 	</div>
 	<div class="form-group">
 		<label for="password">Password:</label> <input type="password"
-			class="form-control" id="password" name="password" ng-model="credentials.password"/>
+			id="password" name="password" ng-model="credentials.password"/>
 	</div>
 	<div class="checkbox">
 	      <label>
 	          <input type="checkbox" ng-model="credentials.rememberMe"/><span> Remember me</span>
 	      </label>
     </div>	
-	<button type="submit" class="btn btn-primary">Submit</button>
+    <p><input type="submit" value="Log in"/></p>	
 </form>
