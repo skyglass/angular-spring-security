@@ -29,7 +29,7 @@ The project is based on Angular JS, Skyglass Security, Angular UI-Router, angula
 * All javascript modules are defined in 'src/main/resources/static/js/require.config.js' and loaded by RequireJS.
 * All angular states are defined in 'src/main/resources/static/js/modules/app.js' file. Any non-abstract state shoud have 'data.displayName' property which is used by uiBreadcrumbs directive to automatically generate breadcrumbs. Any non-abstract state may have 'data.permissions' property which is used by angular-permission library to protect the angular state and redirect unauthorized user to 'No Permissions' page. Define your own states in this file to enable state protection and breadcrumbs auto generation in your own application. See https://github.com/angular-ui/ui-router/wiki/nested-states-%26-nested-views for more details on angular-ui-router nested states & nested views.
 
-#Skyglass Security Configuration
+# Skyglass Security Configuration
 
 * 'src/main/resources/static/security' - Skyglass Security Module folder
 * 'src/main/resources/static/js/security/config' - Skyglass Security Config folder. All files in this folder should be changed in order to enable Skyglass Security in your own Application.
@@ -38,7 +38,7 @@ The project is based on Angular JS, Skyglass Security, Angular UI-Router, angula
 * 'src/main/resources/static/js/security/config/security.menu.config.js' contains menu tabs configuration. Any menu tab may have 'permission' property (or array of properties) to define authorization rules. Unauthorized user won't be able to see protected tab. Names of menu tab 'permission' properties correspond to PERMISSIONS object properties of the 'security.permissions.js' file.
 - 'src/main/resources/static/js/security/config/security.state.permissions.js' defines permissions for angular state protection, with 'angular-permission'. Unauthorized user won't be able to go to protected state and will be redirected to 'No Permissions' state. 
 
-#Skyglass Security API
+# Skyglass Security API
 * $securitySession.permissions - returns permissions defined in security.permission.js file
 * $securitySession.user() - returns user object. Currently, only 'name' property is supported. Override SESSION.initData() method in security.session.js file to fill other properties returned from server.
 * $securityMenuConfig[{menuName}].tabs - returns tabs defined in security.menu.config.js file
@@ -50,7 +50,7 @@ The project is based on Angular JS, Skyglass Security, Angular UI-Router, angula
 * $securityService.start() - initializes security module and redirects to the bookmarked, home or login state
 * security-menu directive - loads menu by name. The menu is defined in security.menu.config.js. The menu tabs are rendered according to user permissions.
 
-#Skyglass Security UI
+# Skyglass Security UI
 2. Run skyglass.demo.SkgApplication java class
 3. Go to localhost:8080/{any_friendly_url}. All urls are 'friendly'. No more #anchors!
 4. You will be redirected to login page with 'remember me' checkbox
